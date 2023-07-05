@@ -220,3 +220,25 @@ DFS는 n개의 vertices와 m개의 edges를 가질 때
 
 두개의 정점 사이의 경로를 구할때 이용가능
 그래프 내의 사이클을 찾는데 이용가능
+
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/1cf9a93b-3ede-4264-b923-995dbdb671ec)
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/107ff4bb-da69-4e75-8864-e3a8b8afe16f)
+
+
+출처 - https://m.blog.naver.com/cyh197/222155704694 (여기에 수도코드 있음)
+
+# ⭐bfs
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/a8c1ba72-f14a-4b3f-a22f-2dcc528fc8f1)
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/ab8ae015-6a85-431d-8634-50fb79920816)
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/536b6e29-387e-481b-b675-07c50d4b93cb)
+
+#### 1️⃣ 적용
+
+그래프가 foreste인지 아닌지 판단하는데 사용
+그래프에서 2개의 정점이 주어졌을 때 그 사이의 minimum path를 찾는데 이용
+path가 존재하는지 여부를 판단할 때 사용
+G의 connected components를 계산하는데 사용
+
+#### 2️⃣ dfs bfs 비교
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/bd4f8091-ccb1-48d1-98bf-574cf699b757)
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/1588bd5c-b60e-4571-8a87-70a74c5a1da6)
