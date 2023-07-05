@@ -155,74 +155,56 @@ https://leejinseop.tistory.com/43
 
 # ⭐dfs
 
-Subgraphs
-
+#### 1️⃣ Subgraphs
 어떤 그래프 G의 서브그래프 S는 
 S의 모든 정점들이 G의 정점의 부분(sub set)이다.
 모든 S들은 G그래프 안에 있어야된다.
 
-​
-
 S를 구성하는 vertex와 edge들은 G에 속해있어야 된다.
-
-​
 
 Spanning subgraph가 되기위해서는 그래프 G의 모든 vertex들을 포함하고 있어야된다.
 아래그림의 빨간색 정점과 간선들로 이루어진 부분이 스패닝 서브그래프이다.
 스패닝서브 그래프는 모든 정점을 포함해야 한다. 그렇지 않으면 그냥 서브그래프 이다.
 
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/04ef0391-b14b-4422-b7ca-2bbfeeca9d58)
 
-​
 
-​
-
-Connectivity
+#### 2️⃣ Connectivity
 
 모든 정점들은 최소 하나 이상의 path로 연결되어 있어야된다.
 위 그림은 connected이고 아래그림은 Non connected이다.
 ​
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/8133dd5d-2e57-46c4-8e0f-563c438a0b2b)
 
 
-​
-
-​
-
-Trees and Forests
+#### 3️⃣ Trees and Forests
 
 그래프 T는 아래의 조건들을 만족해야한다.
 1. T는 connect 되어야 한다.
 2. cycle이 없어야 한다.
 rooted tree와는 다른 구조이다.
 
-​
-
 forest는 여러개의 트리를 포함하고 있는 구조이다.
 forest 또한 싸이클이 없어야 한다.
 
-​
-
+​![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/a350fd9a-23b8-4576-bec6-c92858271f6d)
 
 3개의 tree로 이루어진 Forest 이다.
 
 ​
-
-Sapnning Trees and Forests
+#### 4️⃣ Sapnning Trees and Forests
 
 그래프가 트리가 아닌이상 unique할 필요는 없다.
 spanning tree는 communiciation network를 디자인하는데 이용된다.
 스패닝 포레스트는 여러개의 스패닝 트리들이 모인 것이다.
 
+![image](https://github.com/CS-Algorithm-Study/CS/assets/70028148/d1f0d436-3cc9-480a-adbb-057c5e9cd148)
 
 =>spanning tree이면서 spanning tree graph이다.
 
-​
-
-Depth-First Serach (DFS)
-
+#### 5️⃣ Depth-First Serach (DFS)
 DFS는 그래프를 traversing하는 알고리즘으로 대표적인 기술이다.
 코딩테스트 단골문제이다.
-
-​
 
 DFS의 특징
 1.그래프의 모든 정점들과 간선들을 방문한다.
@@ -230,16 +212,11 @@ DFS의 특징
 3. sapnning froest인지 검사할때 DFS를 사용할 수 있다.
 4. G의 connected를 계산할때 DFS를 사용 할 수 있다.
 
-​
-
 고급알고리즘을 해결하는데 자주 사용된다. 범용성이 상당히 크기때문에
 반드시 알아두어야 되는 기술이다.
 
-
 DFS는 n개의 vertices와 m개의 edges를 가질 때 
 시간복잡도는 O(n+m) 소요된다.
-
-​
 
 두개의 정점 사이의 경로를 구할때 이용가능
 그래프 내의 사이클을 찾는데 이용가능
