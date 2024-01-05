@@ -89,6 +89,48 @@
     - **다양한 형태**의 요청 및 응답이 필요한 경우
     - 대부분의 요청이 **CRUD**(Create, Read, Update, Delete) 기반인 경우
     - **개발자 경험**을 중시하는 프로젝트에서 사용하는 경우
+ 
+### 실습
+<img src="https://github.com/CS-Algorithm-Study/CS/assets/77067383/c22cdd9f-b291-4366-9f5b-f2c0b9235261" width="70%" align="center">
+
+</br>
+
+- JPA 사용해서 간단한 컨트롤러 생성
+ 
+```
+@Controller
+public class PersonController {
+
+    private final PersonRepository personRepository;
+
+    public PersonController(PersonRepository personRepository) {
+        this.personRepository = personRepository;
+    }
+
+    @SchemaMapping(typeName = "Query", value = "findAll")
+    public List<Person> findAll() {
+        return personRepository.findAll();
+    }
+
+    @SchemaMapping(typeName = "Query", value = "findById")
+    public Optional<Person> findById(@Argument Long id) {
+        return personRepository.findById(id);
+    }
+}
+```
+
+- @SchemaMapping 어노테이션을 통해서 GraphQL 요청에서 사용되는 value를 지정할 수 있다.
+- 스프링부트 프로젝트를 실행하고 http://localhost:8080/graphiql 접속
+ 
+</br>
+
+#### findAll 테스트
+<img src="https://github.com/CS-Algorithm-Study/CS/assets/77067383/9f047caf-04f7-4edd-8576-2c75d31386b6">
+
+</br>
+
+#### findById 테스트
+<img src="https://github.com/CS-Algorithm-Study/CS/assets/77067383/76967124-1c17-4b52-8bb6-251b34377293">
 
 - 참고
     - https://americanopeople.tistory.com/330
