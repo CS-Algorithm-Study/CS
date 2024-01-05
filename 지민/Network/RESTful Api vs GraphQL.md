@@ -1,6 +1,11 @@
 ## RESTful API vs GraphQL
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/66bf53fd-8196-440a-9c1a-dae432758d73/1259c1fa-1fb7-452a-97ed-b94a13787151/Untitled.png)
+</br>
+
+<img src="https://github.com/CS-Algorithm-Study/CS/assets/77067383/752e97f0-d75f-4d20-9860-862866241a87" width="80%">
+
+</br>
+
 - REST API와 GraphQL은 모두 API 구조를 설계하고 데이터를 처리하기 위한 방식
 
 1. REST API
@@ -13,7 +18,7 @@
 - 클라이언트가 정확히 필요한 데이터를 명시해 요청하고, 서버는 요청된 특정 데이터만을 응답하는 방식
 - 보다 효율적인 데이터 송수신이 가능하게 만든다는 장점
 
-###REST API 장점
+### REST API 장점
 
 1. 개발자 친화적이며 단순함
 2. 캐싱 지원
@@ -37,7 +42,11 @@
     - 클라이언트 측의 개발자가 편하게 일할 수 있다.
     - 백엔드 측과 URL을 맞춰서 작업을 진행해야 하는 번거로움을 없앨 수 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/66bf53fd-8196-440a-9c1a-dae432758d73/c7a3ede3-74bd-4687-b393-faa3e28a7817/Untitled.png)
+</br>
+
+<img src="https://github.com/CS-Algorithm-Study/CS/assets/77067383/ce7c0531-1080-4e43-9750-b032e9a5dade" width="80%">
+
+</br>
 
 ### 어떤 경우에 사용해야하는가?
 - 두 가지 모두 장단점이 명확하다. RESTful API의 경우 모든 엔드포인트를 개발하고 여러 경우의 수를 대응해야하기에 개발 속도가 상대적으로 느리고, GraphQL의 경우 원칙적으로 Multipart 방식의 전송이 허용되지 않기에 이미지, 영상 등의 처리에 굉장히 취약하다.
@@ -50,5 +59,5 @@
     - 대부분의 요청이 CRUD인 경우 (Multipart 방식의 전송이 필요없는 경우)
 
 - 참고
-https://americanopeople.tistory.com/330
-https://velog.io/@sjy0917/API-RESTful-vs-GraphQL
+    - https://americanopeople.tistory.com/330
+    - https://velog.io/@sjy0917/API-RESTful-vs-GraphQL
