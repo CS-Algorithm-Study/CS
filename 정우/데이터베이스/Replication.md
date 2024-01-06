@@ -64,7 +64,7 @@
 - **Replication SQL Thread**
   - Relay log 파일의 이벤트들을 읽고 Replication을 실행
 
-### 복제 동기화 방식
+## 🤔 복제 동기화 방식
 
 - **비동기 복제**
 - 
