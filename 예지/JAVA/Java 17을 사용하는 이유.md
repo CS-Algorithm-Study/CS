@@ -68,6 +68,7 @@ public recode Response(
 ){}
 ```
 <br>
+
 ### 2. Stream.toList()
 
 Collectors.toList()를 .toList()로 표현할 수 있다.
