@@ -6,9 +6,9 @@
 
 </br>
 
-- REST API와 GraphQL은 모두 API 구조를 설계하고 데이터를 처리하기 위한 방식
+- RESTful API와 GraphQL은 모두 API 구조를 설계하고 데이터를 처리하기 위한 방식
 
-1. REST API
+1. RESTful API
 - HTTP 메서드(GET, POST 등)을 사용해 API를 구축하기 위한 아키텍처 스타일
 - 일반적으로 URL을 통해 사용자가 요청한 주소를 식별하고 JSON의 형태로 데이터를 반환함
 - 클라이언트에서 서버로 각 요청을 보낼 때 필요한 모든 정보 포함
@@ -20,7 +20,7 @@
 
 ---
 
-### REST API 장점
+### RESTful API 장점
 
 1. 개발자 친화적이며 단순함
 2. 캐싱 지원
