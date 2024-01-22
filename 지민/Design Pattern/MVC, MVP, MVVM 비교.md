@@ -125,8 +125,7 @@
 
 ### 4) 장점
 
-- View와 Model 사이 의존성이 없음
-- 또한 Command 패턴과 Data Binding을 사용하여 View와 View Model 사이의 의존성 또한 없앤 디자인 패턴
+- Command 패턴과 Data Binding을 사용하여 View와 View Model 사이의 의존성 없앰
 - 각 부분이 독립적이기 때문에 모듈화하여 개발할 수 있음
 
 ### 5) 단점
