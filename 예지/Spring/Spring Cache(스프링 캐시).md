@@ -47,7 +47,7 @@ implementation 'org.springframework.boot:spring-boot-starter-cache
 ```java
 @Cacheable(cacheNames = "memberCache", key = "#key")
 public Member getCacheData(final String key) {
-	log.info("해당 key에 대한 캐시가 없는 경우 로그가 찍힌다.);
+	log.info("해당 key에 대한 캐시가 없는 경우 로그가 찍힌다.");
 	return Member;
 }
 
@@ -83,20 +83,20 @@ public boolean expireCacheData(final String key) {
 ```java
   @Cacheable("memberCacheStore")
   public Member cacheable(String date) {
-    log.info("cache 저장, ㅏ");
-    return member;
+	log.info("cache 저장");
+	return member;
   }
 
   @Cacheable(value = "memberCacheStore", key = "#member.name")
   public Member cacheableByKey(Member member) {
-		log.info("cache 저장(key 지정)");
-    return member;
+	log.info("cache 저장(key 지정)");
+	return member;
   }
 
   @Cacheable(value = "memberCacheStore", key = "#member.name", condition = "#member.name.length() > 5")
   public Member cacheableWithCondition(Member member) {
-		log.info("조건부 cache 저장");
-    return member;
+	log.info("조건부 cache 저장");
+	return member;
   }
 ```
 
